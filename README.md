@@ -141,6 +141,10 @@ If you're fond of Guard you might like [guard-rubycritic][4]. It automatically a
 
 For continuous integration, you can give [Jenkins CI][5] a spin. With it, you can [easily build your own (poor-man's) Code Climate][6]!
 
+#### Optional Dependencies
+
+If you are using the JSON reporter and [Oj](https://github.com/ohler55/oj) is installed it will be used instead of the default JSON parser.
+Oj a is much faster JSON parser and therefore useful for shortening build times when generating large reports.
 
 ### Rake Task
 

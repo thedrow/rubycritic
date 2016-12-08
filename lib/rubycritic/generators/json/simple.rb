@@ -1,5 +1,12 @@
 # frozen_string_literal: true
-require 'json'
+begin
+  require 'oj'
+  Oj.default_options = {mode: :compat}
+
+  JSON = Oj
+rescue LoadError
+  require 'json'
+end
 require 'rubycritic/version'
 require 'pathname'
 
